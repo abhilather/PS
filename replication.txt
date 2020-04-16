@@ -1,0 +1,27 @@
+Basic Steps:
+
+	1. First, we need to stop any running instances of mongod.
+	2. Then, we need to start a new instance using the "--replSet"
+	3. Then we need to connect to this mongod instance using the mongo shell.
+	4. In Mongo client,we issue the command rs.initiate() to initiate a new replica set.
+	5. To check the replica set configuration, we issue the command rs.conf(). To check the status of replica set issue the 	command rs.status().
+	6. use rs.add() to add secondary mongod instances to replica set.
+
+
+
+Command:
+
+	port used:- 27017
+	db path used:- "C:\data\db"
+	name of the replication set used: "replication_set_1"
+
+
+	replication commands:
+
+		a) mongod --port 27017 --dbpath "C:\data\db" --replSet replication_set_1
+		b) mongo --replSet "replication_set_1"
+		c) rs.initiate()
+		d) rs.add("mongod_new_instance:27017")
+
+
+
