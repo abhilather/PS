@@ -18,6 +18,7 @@ public class PrimerValues {
 		System.out.println("Please enter a word: ");
 		try (Scanner scanner = new Scanner(System.in)) {
 			String name = scanner.nextLine();
+			name = name.toUpperCase();
 			String result = "";
 			for (int i = 0; i < name.length() - 1; i++) {
 				result += finalArray.get(name.charAt(i) - 65).get(1) + ", ";
