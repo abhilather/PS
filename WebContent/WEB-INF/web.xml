@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app>
+
+<web-app>
+
+  <servlet>
+    <servlet-name>Week9Servlet</servlet-name>
+    <servlet-class>sapient.week9.Week9Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Week9Servlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
